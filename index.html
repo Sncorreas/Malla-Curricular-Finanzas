@@ -1,14 +1,199 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malla Interactiva</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Malla Finanzas</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffe4c4; /* naranja suave tipo pastel */
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #b34700; /* anaranjado más fuerte */
+      font-style: italic;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      margin-bottom: 0;
+    }
+
+    header h2 {
+      font-size: 1.3em;
+      color: #7b4a27; /* cafecito suave */
+      margin-top: 5px;
+    }
+
+    header h2 span {
+      font-size: 1.5em;
+    }
+
+    .semestres {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .semestre {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .semestre:hover {
+      transform: scale(1.03);
+    }
+
+    .semestre h3 {
+      background-color: #ffa366;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      margin: -20px -20px 15px -20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      padding: 5px 0;
+      border-bottom: 1px dotted #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-  <h1>Malla Interactiva</h1>
-  <div id="grid"></div>
-  <script src="script.js"></script>
+
+  <header>
+    <h1>Malla Finanzas</h1>
+    <h2>✨ Tú puedes con todo <span>😊❤️</span> ✨</h2>
+  </header>
+
+  <div class="semestres">
+
+    <div class="semestre">
+      <h3>1er Semestre</h3>
+      <ul>
+        <li>Conocimiento, Palabra y Cambio Social</li>
+        <li>Matemática I</li>
+        <li>Contabilidad Básica</li>
+        <li>Fundamentos de Administración</li>
+        <li>Entorno Socioeconómico</li>
+        <li>Introducción a la Microeconomía</li>
+      </ul>
+    </div>
+
+    <div class="semestre">
+      <h3>2do Semestre</h3>
+      <ul>
+        <li>Fundamentos de Investigación</li>
+        <li>Estadística I</li>
+        <li>Fundamentos de Contabilidad de Costos</li>
+        <li>Pensamiento Creativo e Innovación</li>
+        <li>Optimización Aplicada a la Administración y Economía</li>
+        <li>Introducción a la Macroeconomía</li>
+      </ul>
+    </div>
+
+    <div class="semestre">
+      <h3>3er Semestre</h3>
+      <ul>
+        <li>Jesucristo y Aprendizajes Vitales</li>
+        <li>Herramientas de Programación para los Negocios</li>
+        <li>Contabilidad Intermedia</li>
+        <li>Marketing y Ecosistema Digital</li>
+        <li>Estadística II</li>
+        <li>Análisis y Diagnóstico Financiero</li>
+      </ul>
+    </div>
+
+    <div class="semestre">
+      <h3>4to Semestre</h3>
+      <ul>
+        <li>Legislación Empresarial</li>
+        <li>Investigación de Operaciones</li>
+        <li>Contabilidad Societaria</li>
+        <li>Gestión por Procesos</li>
+        <li>Administración Presupuestaria</li>
+        <li>Finanzas Operativas</li>
+      </ul>
+    </div>
+
+    <div class="semestre">
+      <h3>5to Semestre</h3>
+      <ul>
+        <li>Ética e Interculturalidad</li>
+        <li>Gestión del Talento Humano</li>
+        <li>Administración de Portafolios</li>
+        <li>Administración Estratégica</li>
+        <li>Tributación Aplicada</li>
+        <li>Decisiones de Financiamiento e Inversiones</li>
+      </ul>
+    </div>
+
+    <div class="semestre">
+      <h3>6to Semestre</h3>
+      <ul>
+        <li>Ecología Integral</li>
+        <li>Instituciones Financieras del Sistema Nacional</li>
+        <li>Control de Gestión</li>
+        <li>Diseño y Evaluación de Proyectos</li>
+        <li>Seguros y Transferencia de Riesgos</li>
+        <li>Finanzas Internacionales</li>
+      </ul>
+    </div>
+
+    <div class="semestre">
+      <h3>7mo Semestre</h3>
+      <ul>
+        <li>Seminario de Titulación</li>
+        <li>Asignatura 1 de Itinerario</li>
+        <li>Asignatura 2 de Itinerario</li>
+        <li>Analítica Financiera</li>
+        <li>Valoración de Renta Fija</li>
+        <li>Gestión de Riesgos Financieros</li>
+      </ul>
+    </div>
+
+    <div class="semestre">
+      <h3>8vo Semestre</h3>
+      <ul>
+        <li>Integración Curricular</li>
+        <li>Asignatura 3 de Itinerario</li>
+        <li>Asignatura 4 de Itinerario</li>
+        <li>Habilidades Gerenciales</li>
+        <li>Innovación Financiera y Fintech</li>
+        <li>Valoración de Empresas</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    Hecho con 💻 y mucho ánimo por ti ✨
+  </footer>
+
 </body>
 </html>
