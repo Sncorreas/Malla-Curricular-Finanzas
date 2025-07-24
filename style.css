@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+  background: #f0f0f0;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-gap: 5px;
+  justify-content: center;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 1px solid #ccc;
+  transition: background 0.3s;
+}
+.cell:hover {
+  background: lightblue;
+  cursor: pointer;
+}
